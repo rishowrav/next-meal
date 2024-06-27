@@ -1,7 +1,7 @@
 import React from "react";
 
 const getTime = async () => {
-  const res = await fetch("http://localhost:3000/time", {
+  const res = await fetch("https://next-meal-vita.vercel.app/time", {
     next: { revalidate: 5 },
   });
   const data = await res.json();
